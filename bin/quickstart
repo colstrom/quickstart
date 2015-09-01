@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'escort'
+require 'quickstart/cli'
+
+Escort::App.create do |app|
+  app.requires_arguments
+
+  app.options do |options|
+    options.opt :template, "Template", short: '-t', long: '--template', type: :string, default: 'gem'
+    options.opt :name, "Name", short: '-n', long: '--name', type: :string
+  end
+
+  app.action do |options, arguments|
+    QuickStart::CLI.new(options, arguments).execute
+  end
+end
