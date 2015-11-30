@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'contracts', '~> 0.11'
+gem 'contracts', '~> 0.12'
 gem 'erubis', '~> 2.7'
 gem 'escort', '~> 0.4'
 gem 'tilt', '~> 2.0'
