@@ -6,7 +6,6 @@ gem 'escort', '~> 0.4'
 gem 'tilt', '~> 2.0'
 
 group :development do
-  gem 'brakeman', '~> 3.1'
   gem 'bundler', '~> 1.10'
   gem 'flog', '~> 4.3'
   gem 'inch', '~> 0.6'
