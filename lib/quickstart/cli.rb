@@ -5,7 +5,8 @@ require 'quickstart/template'
 module QuickStart
   # CommandLine Interface for QuickStart
   class CLI < ::Escort::ActionCommand::Base
-    include Contracts
+    include ::Contracts::Core
+    include ::Contracts::Builtin
 
     Contract None => Any
     def execute
