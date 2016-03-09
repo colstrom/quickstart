@@ -4,7 +4,8 @@ require 'tilt/erubis'
 module QuickStart
   # Templating for QuickStart
   class Template
-    include Contracts
+    include ::Contracts::Core
+    include ::Contracts::Builtin
 
     attr_accessor :path
 
