@@ -1,0 +1,31 @@
+#+TITLE: QuickStart
+#+LATEX: \pagebreak
+
+* Installation
+
+  #+BEGIN_SRC shell
+    gem install quickstart
+  #+END_SRC
+
+* Usage
+  
+  - Create a template directory
+  - Set the environment variable =QUICKSTART_TEMPLATES= to that path.
+  - Create one or more directories within =QUICKSTART_TEMPLATES=.
+
+  #+BEGIN_SRC shell
+    quickstart -t some_template --name some_name /path/to/output/to
+  #+END_SRC
+
+* Note
+
+  All files in a template are parsed as ERB templates.
+
+* License
+
+  ~quickstart~ is available under the [[https://tldrlegal.com/license/mit-license][MIT License]]. See ~LICENSE.txt~ for the
+  full text.
+
+* Contributors
+
+  - [[https://colstrom.github.io/][Chris Olstrom]] | [[mailto:chris@olstrom.com][e-mail]] | [[https://twitter.com/ChrisOlstrom][Twitter]]
